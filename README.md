@@ -37,7 +37,7 @@ example from => http://www.allisons.org/ll/AlgDS/Tree/Suffix/
 ### quick hack, for the first couple of steps, up to and including the grouping (non-recursive at this time)
 
 ```
-t = "tatat"
+t = "mississippi"
 x = [] of Tuple(Int32, String)
 t.size.times do |i|
   x << {i+1, t[(-1*(i+1))..-1]}
@@ -59,8 +59,10 @@ x.each do |i|
 end
 
 groups # => [
-#    [{2, "at"}, {4, "atat"}], 
-#    [{1, "t"}, {3, "tat"}, {5, "tatat"}]
+#   [{1, "i"}, {4, "ippi"}, {7, "issippi"}, {10, "ississippi"}], 
+#   [{11, "mississippi"}], 
+#   [{2, "pi"}, {3, "ppi"}], 
+#   [{5, "sippi"}, {6, "ssippi"}, {8, "sissippi"}, {9, "ssissippi"}]
 # ]	
 ```
 

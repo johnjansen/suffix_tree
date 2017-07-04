@@ -55,7 +55,7 @@ x.each do |i|
     groups << [] of Tuple(Int32, String)
   end
   groups[groups.size-1] << i
-	prev = t[0]
+  prev = t[0]
 end
 
 # NOTE that this does not break 

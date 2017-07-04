@@ -58,6 +58,10 @@ x.each do |i|
 	prev = t[0]
 end
 
+# NOTE that this does not break 
+# the tree at the lower layers
+# as this is not a full implementation
+# or even a partial one, and it is not recursive
 groups # => [
 #   [{1, "i"}, {4, "ippi"}, {7, "issippi"}, {10, "ississippi"}], 
 #   [{11, "mississippi"}], 

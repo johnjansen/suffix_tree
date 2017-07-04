@@ -58,7 +58,10 @@ x.each do |i|
 	prev = t[0]
 end
 
-groups
+groups # => [
+#    [{2, "at"}, {4, "atat"}], 
+#    [{1, "t"}, {3, "tat"}, {5, "tatat"}]
+#]	
 ```
 
 ## Installation

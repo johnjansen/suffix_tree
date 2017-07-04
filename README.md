@@ -1,4 +1,5 @@
 # Suffix Tree - (pure crystal-lang)
+# UNDER CONSTRUCTION
 
 [![GitHub version](https://badge.fury.io/gh/johnjansen%2Fsuffix_tree.svg)](http://badge.fury.io/gh/johnjansen%2Fsuffix_tree)
 [![CI](https://travis-ci.org/johnjansen/suffix_tree.svg?branch=master)](https://travis-ci.org/johnjansen/suffix_tree)

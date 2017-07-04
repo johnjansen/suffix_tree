@@ -50,42 +50,6 @@ T6  = ssippi
 T3  = ssissippi
 ```
 
-### quick hack, for the first couple of steps, up to and including the grouping (non-recursive at this time)
-
-```
-t = "mississippi"
-x = [] of Tuple(Int32, String)
-t.size.times do |i|
-  x << {i+1, t[(-1*(i+1))..-1]}
-end
-
-x.sort!{ |a,b| 
-  {a[1][0], a[1].size} <=> {b[1][0], b[1].size}
-}
-
-groups = [] of Array(Tuple(Int32, String))
-prev = nil
-x.each do |i|
-  t = i[1]
-  if t[0] != prev
-    groups << [] of Tuple(Int32, String)
-  end
-  groups[groups.size-1] << i
-  prev = t[0]
-end
-
-# NOTE that this does not break 
-# the tree at the lower layers
-# as this is not a full implementation
-# or even a partial one, and it is not recursive
-groups # => [
-#   [{1, "i"}, {4, "ippi"}, {7, "issippi"}, {10, "ississippi"}], 
-#   [{11, "mississippi"}], 
-#   [{2, "pi"}, {3, "ppi"}], 
-#   [{5, "sippi"}, {6, "ssippi"}, {8, "sissippi"}, {9, "ssissippi"}]
-# ]	
-```
-
 ## Installation
 
 Add this to your application's `shard.yml`:

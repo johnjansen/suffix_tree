@@ -34,6 +34,22 @@ tree-->|---mississippi                m .. mississippi
 example from => http://www.allisons.org/ll/AlgDS/Tree/Suffix/
 ```
 
+```
+If the non-empty suffixes are sorted:
+
+T11 = i
+T8  = ippi
+T5  = issippi
+T2  = ississippi
+T1  = mississippi
+T10 = pi
+T9  = ppi
+T7  = sippi
+T4  = sissippi
+T6  = ssippi
+T3  = ssissippi
+```
+
 ### quick hack, for the first couple of steps, up to and including the grouping (non-recursive at this time)
 
 ```
